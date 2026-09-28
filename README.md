@@ -10,7 +10,7 @@ A previous developer started building a mobile order app for the Block C kiosk a
 
 ## Getting started
 
-You need **Node.js 20 or later**.
+You need **Node.js 20 or later**. Clone this repository, or use **Code → Download ZIP** on GitHub, then run:
 
 ```bash
 npm install
@@ -60,8 +60,9 @@ You can use AI assistants, Copilot, Stack Overflow, docs, whatever you normally 
 
 ## What to send us
 
-- Your code, as a link to a **private** Git repository (please give us access) or a zip. Please don't publish it publicly.
-- A `NOTES.md` covering:
+Reply to our email with a **zip of your project**, leaving out `node_modules`. If you've committed your work with Git, `git archive -o submission.zip HEAD` does this for you. Please don't publish your solution publicly.
+
+Include a `NOTES.md` in the project root covering:
   - what you changed and why, including the bugs you found
   - decisions and trade-offs you made
   - what you'd do next with more time, or before going live
