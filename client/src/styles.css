@@ -1,0 +1,94 @@
+:root {
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --bg: #f9fafb;
+  --orange: #d4572f;
+  --purple: #8e86bc;
+  --success: #047857;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1 { font-size: 24px; }
+h2 { font-size: 18px; margin-top: 28px; }
+h3 { font-size: 16px; margin: 0 0 4px; }
+p { margin: 0; }
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 700; color: var(--ink); text-decoration: none; }
+.brand span { font-weight: 400; color: var(--muted); }
+.basket-link { color: var(--ink); text-decoration: none; font-weight: 500; }
+.badge {
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 13px;
+}
+
+.container { max-width: 640px; margin: 0 auto; padding: 16px; }
+.venue p, .muted { color: var(--muted); }
+.price { color: var(--muted); }
+
+.menu-list, .basket-list { list-style: none; padding: 0; margin: 0; }
+.menu-item, .basket-line {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.menu-item-main, .basket-line { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.sold-out { opacity: 0.5; }
+.modifiers { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 14px; }
+
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:disabled { cursor: not-allowed; background: var(--muted); }
+.btn-pay {
+  width: 100%;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 17px;
+  background: linear-gradient(90deg, var(--orange), var(--purple) 60%);
+}
+
+.qty { display: flex; align-items: center; gap: 12px; }
+.qty button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.basket-total { display: flex; justify-content: space-between; font-size: 18px; padding: 16px 4px 0; }
+.empty, .notice { text-align: center; padding: 48px 0; }
+.empty p, .notice p { margin-bottom: 16px; }
+.notice.success h1 { color: var(--success); }
